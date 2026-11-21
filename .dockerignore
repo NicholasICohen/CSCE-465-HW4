@@ -1,2 +1,3 @@
 .gitignore
 .git
+mock-c2/data/*

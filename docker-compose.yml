@@ -9,11 +9,13 @@ services:
     mock-c2:
         build: ./mock-c2
         container_name: mock-c2
+        volumes:
+            - ./mock-c2/data:/data
         networks:
             hw4net:
                 ipv4_address: 172.30.0.66
         ports:
-            - "8000:8000"
+            - "8080:8080"
         
     web-lab:
         build: ./web-lab
@@ -22,7 +24,7 @@ services:
             hw4net:
                 ipv4_address: 172.30.0.40
         ports:
-            - "8080:8080"
+            - "8000:8000"
         
 networks:
     hw4net:
