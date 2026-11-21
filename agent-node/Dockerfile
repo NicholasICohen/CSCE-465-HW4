@@ -4,7 +4,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends socat curl bash
 
 WORKDIR /app
 
-COPY mock_skill.sh /app/mock_skill.sh
+COPY mock_skill.sh fake_secrets.txt /app/
 
 RUN chmod +x /app/mock_skill.sh
 
