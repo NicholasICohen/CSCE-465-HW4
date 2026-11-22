@@ -1,0 +1,20 @@
+[40224 - Suricata-Main] 2026-11-22 15:48:08 Notice: suricata: This is Suricata version 8.0.8 RELEASE running in USER mode
+[40224 - Suricata-Main] 2026-11-22 15:48:08 Info: cpu: CPUs/cores online: 4
+[40224 - Suricata-Main] 2026-11-22 15:48:08 Info: suricata: Setting engine mode to IDS mode by default
+[40224 - Suricata-Main] 2026-11-22 15:48:08 Info: exception-policy: master exception-policy set to: auto
+[40224 - Suricata-Main] 2026-11-22 15:48:08 Info: suricata: Preparing unexpected signal handling
+[40224 - Suricata-Main] 2026-11-22 15:48:08 Info: logopenfile: fast output device (regular) initialized: fast.log
+[40224 - Suricata-Main] 2026-11-22 15:48:08 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[40224 - Suricata-Main] 2026-11-22 15:48:08 Info: logopenfile: stats output device (regular) initialized: stats.log
+[40224 - Suricata-Main] 2026-11-22 15:48:08 Info: detect: 1 rule files processed. 3 rules successfully loaded, 0 rules failed, 0 rules skipped
+[40224 - Suricata-Main] 2026-11-22 15:48:08 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[40224 - Suricata-Main] 2026-11-22 15:48:08 Info: detect: 3 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 2 inspect application layer, 0 are decoder event only
+[40224 - Suricata-Main] 2026-11-22 15:48:08 Warning: detect: rule 1000003: SYN-only to port(s) 8080:8080 w/o direction specified, disabling for toclient direction
+[40224 - Suricata-Main] 2026-11-22 15:48:08 Warning: mpm-hs-cache: Failed to create Hyperscan cache file, make sure the folder exist and is writable or adjust sgh-mpm-caching-path setting (/var/lib/suricata/cache/sgh/21a85b15920476688d445d4674dc7ef802cec6a4d828ede8bd7eba4c41e80230_v2.hs)
+[40225 - RX#01] 2026-11-22 15:48:08 Info: pcap: Starting file run for hw4-malicious.pcap
+[40225 - RX#01] 2026-11-22 15:48:08 Info: pcap: pcap file hw4-malicious.pcap end of file reached (pcap err code 0)
+[40224 - Suricata-Main] 2026-11-22 15:48:08 Notice: threads: Threads created -> RX: 1 W: 4 FM: 1 FR: 1   Engine started.
+[40224 - Suricata-Main] 2026-11-22 15:48:08 Notice: suricata: Signal Received.  Stopping engine.
+[40224 - Suricata-Main] 2026-11-22 15:48:08 Info: suricata: time elapsed 0.081s
+[40225 - RX#01] 2026-11-22 15:48:08 Notice: pcap: read 1 file, 32 packets, 4262 bytes
+[40224 - Suricata-Main] 2026-11-22 15:48:08 Info: counters: Alerts: 3
