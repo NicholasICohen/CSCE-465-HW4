@@ -69,3 +69,14 @@ verify install with the following commands
 
 To build the Docker network simulation, run `docker compose up -d --build` from inside the main project  folder. Once this has been done once run `docker compose up` to start it again. To stop the network simulation run `docker compose down`. Once this is running, you can enter into one of the nodes by running `docker exec -it {NODE} /bin/bash`, and type `exit` to exit. To run other commands inside a container, you can use `docker compose exec {NODE} {COMMAND} {ARGUMENTS}`.
 
+## Packet Capture
+
+To begin capturing Docker network packets, run `sudo tcpdump -i br-hw4 -s 0 -w {PCAP_FILENAME}.pcap 'net 172.30.0.0/24'`. 
+
+## Firewall
+
+To activate the firewall rules, run `sudo ./firewall.sh` from within the hw4 folder. To deactivate the rules, run `sudo firewall-reset`.
+
+## IDS Logs
+
+To create the IDS logs for the malicious and clean packet captures (must be done after capturing network packets), run `suricata -k none -r hw4-malicious.pcap -S local.rules -l suricata-malicious` and `suricata -k none -r hw4-clean.pcap -S local.rules -l suricata-clean`.
