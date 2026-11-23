@@ -67,5 +67,5 @@ verify install with the following commands
 
 ## Network Simulation
 
-To run the Docker network simulation, run `docker compose up`. Once this is running, you can enter into one of the nodes by running `docker exec -it {NODE} /bin/bash`.
+To build the Docker network simulation, run `docker compose up -d --build` from inside the main project  folder. Once this has been done once run `docker compose up` to start it again. To stop the network simulation run `docker compose down`. Once this is running, you can enter into one of the nodes by running `docker exec -it {NODE} /bin/bash`, and type `exit` to exit. To run other commands inside a container, you can use `docker compose exec {NODE} {COMMAND} {ARGUMENTS}`.
 
